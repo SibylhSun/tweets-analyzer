@@ -60,11 +60,10 @@ print("\nAverage likes per tweet with the term:", average_likes)
 
 # Retrieve place details for tweets with the term
 # Replace line 76-79 of get_place() method in tweets_analyzer.py with your own Twitter API credentials from twitter
-api_key = 'your_api_key'\
-api_key_secret = 'your_api_key_secret'\
-access_token = 'your_access_token'\
-access_token_secret = 'your_access_token_secret'\
-Ensure these credentials are added to the get_place method in the TweetsAnalyzer class.
+# api_key = 'your_api_key'\
+# api_key_secret = 'your_api_key_secret'\
+# access_token = 'your_access_token'\
+# access_token_secret = 'your_access_token_secret'
 
 places = analyzer.get_place()\
 print("\nPlace details for tweets with the term:", places)
