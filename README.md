@@ -30,7 +30,6 @@ Ensure your tweet data is stored in a tab-separated values (TSV) file or another
 
 2. Load Data and Initialize TweetsAnalyzer
 ```bash
-python==3.11
 import pandas as pd
 from tweets_analyzer import TweetsAnalyzer
 
@@ -47,7 +46,6 @@ analyzer = TweetsAnalyzer(df, search_term)
 3. Analyze Data
 You can now use the methods provided by TweetsAnalyzer to analyze your data:
 ```bash
-python==3.11
 # Count tweets containing the term on each day
 tweet_counts_by_date = analyzer.count_tweets_with_term_by_date()\
 print("Number of tweets posted containing the term on each day:", tweet_counts_by_date)
@@ -74,6 +72,10 @@ print("\nPlace details for tweets with the term:", places)
 # Extract the time each tweet was posted
 times = analyzer.time_tweet_posted()\
 print("\nTime each tweet was posted with the term:", times)
+
+# Get the author_id of the user posted the most tweets containing the term
+user = analyzer.user_posted_most_term()
+print("\nThe user posted the most tweets containing the term is:", analyzer.user_posted_most_term())
 ```
 
 ## Example
