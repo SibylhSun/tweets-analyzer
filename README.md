@@ -29,7 +29,8 @@ tweepy
 Ensure your tweet data is stored in a tab-separated values (TSV) file or another format that can be loaded into a pandas DataFrame. 
 
 2. Load Data and Initialize TweetsAnalyzer
-'''
+```bash
+python==3.11
 import pandas as pd
 from tweets_analyzer import TweetsAnalyzer
 
@@ -71,7 +72,7 @@ print("\nPlace details for tweets with the term:", places)
 # Extract the time each tweet was posted
 times = analyzer.time_tweet_posted()\
 print("\nTime each tweet was posted with the term:", times)
-'''
+```
 
 ## Example
 An example of using TweetsAnalyzer can be found in the example_run.ipynb file. This example demonstrates loading data, initializing the class, and calling its methods.
