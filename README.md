@@ -32,45 +32,45 @@ Ensure your tweet data is stored in a tab-separated values (TSV) file or another
 import pandas as pd
 from tweets_analyzer import TweetsAnalyzer
 
-# Load your tweet data into a DataFrame
+#### Load your tweet data into a DataFrame
 df = pd.read_csv('path_to_your_file.tsv', sep='\t')
 
-# Define the search term you want to analyze
+#### Define the search term you want to analyze
 search_term = 'example_term'
 
-# Initialize the TweetsAnalyzer with the DataFrame and search term
+#### Initialize the TweetsAnalyzer with the DataFrame and search term
 analyzer = TweetsAnalyzer(df, search_term)
 
 3. Analyze Data
 You can now use the methods provided by TweetsAnalyzer to analyze your data:
 
-# Count tweets containing the term on each day
+#### Count tweets containing the term on each day
 tweet_counts_by_date = analyzer.count_tweets_with_term_by_date()\
 print("Number of tweets posted containing the term on each day:", tweet_counts_by_date)
 
-# Count unique users who posted tweets with the term
+#### Count unique users who posted tweets with the term
 user_count = analyzer.count_of_users_posted_with_term()\
 print("\nCount of unique users who posted with the term:", user_count)
 
-# Calculate the average likes for tweets with the term
+#### Calculate the average likes for tweets with the term
 average_likes = analyzer.count_of_likes_with_term()\
 print("\nAverage likes per tweet with the term:", average_likes)
 
-# Retrieve place details for tweets with the term
-# Replace line 76-79 of get_place() method in tweets_analyzer.py with your own Twitter API credentials from twitter
-api_key = 'your_api_key'
-api_key_secret = 'your_api_key_secret'
-access_token = 'your_access_token'
-access_token_secret = 'your_access_token_secret'
+#### Retrieve place details for tweets with the term
+#### Replace line 76-79 of get_place() method in tweets_analyzer.py with your own Twitter API credentials from twitter
+api_key = 'your_api_key'\
+api_key_secret = 'your_api_key_secret'\
+access_token = 'your_access_token'\
+access_token_secret = 'your_access_token_secret'\
 Ensure these credentials are added to the get_place method in the TweetsAnalyzer class.
 
 places = analyzer.get_place()\
 print("\nPlace details for tweets with the term:", places)
 
-# Extract the time each tweet was posted
+#### Extract the time each tweet was posted
 times = analyzer.time_tweet_posted()\
 print("\nTime each tweet was posted with the term:", times)
 
 
-Example
+## Example
 An example of using TweetsAnalyzer can be found in the example_run.ipynb file. This example demonstrates loading data, initializing the class, and calling its methods.
