@@ -1,25 +1,30 @@
-Overview
+# Overview
 
 TweetsAnalyzer is a Python class designed to analyze tweet data. It provides methods to count tweets containing a specific term, analyze the number of users posting those tweets, calculate the average likes, and retrieve place information for tweets.
 
-Features
+# Features
 
 count_tweets_with_term_by_date(): Group and count tweets containing the search term by their posting date.
+
 count_of_users_posted_with_term(): Count the number of unique users who posted tweets containing the search term.
+
 count_of_likes_with_term(): Calculate the average number of likes for tweets containing the search term.
+
 get_place(): Retrieve place information for tweets containing the search term using the Twitter API.
+
 time_tweet_posted(): Extract the time of day when tweets containing the search term were posted.
+
 user_posted_most_term(): Get the author_id of the user posted the most tweets containing the search term.
 
-Prerequisites
+# Prerequisites
 
-Before using TweetsAnalyzer, ensure you have the following installed:
-Python 3.x
-pandas
-tweepy
+Before using TweetsAnalyzer, ensure you have the following installed: \n
+Python 3.x \n
+pandas \n
+tweepy \n 
 
 
-Usage
+# Usage
 1. Prepare Your Data
 Ensure your tweet data is stored in a tab-separated values (TSV) file or another format that can be loaded into a pandas DataFrame. 
 
