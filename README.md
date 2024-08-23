@@ -45,15 +45,15 @@ analyzer = TweetsAnalyzer(df, search_term)
 You can now use the methods provided by TweetsAnalyzer to analyze your data:
 
 # Count tweets containing the term on each day
-tweet_counts_by_date = analyzer.count_tweets_with_term_by_date()
+tweet_counts_by_date = analyzer.count_tweets_with_term_by_date()\
 print("Number of tweets posted containing the term on each day:", tweet_counts_by_date)
 
 # Count unique users who posted tweets with the term
-user_count = analyzer.count_of_users_posted_with_term()
+user_count = analyzer.count_of_users_posted_with_term()\
 print("\nCount of unique users who posted with the term:", user_count)
 
 # Calculate the average likes for tweets with the term
-average_likes = analyzer.count_of_likes_with_term()
+average_likes = analyzer.count_of_likes_with_term()\
 print("\nAverage likes per tweet with the term:", average_likes)
 
 # Retrieve place details for tweets with the term
@@ -64,11 +64,11 @@ access_token = 'your_access_token'
 access_token_secret = 'your_access_token_secret'
 Ensure these credentials are added to the get_place method in the TweetsAnalyzer class.
 
-places = analyzer.get_place()
+places = analyzer.get_place()\
 print("\nPlace details for tweets with the term:", places)
 
 # Extract the time each tweet was posted
-times = analyzer.time_tweet_posted()
+times = analyzer.time_tweet_posted()\
 print("\nTime each tweet was posted with the term:", times)
 
 
