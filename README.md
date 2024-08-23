@@ -18,10 +18,10 @@ user_posted_most_term(): Get the author_id of the user posted the most tweets co
 
 # Prerequisites
 
-Before using TweetsAnalyzer, ensure you have the following installed: \n
-Python 3.x \n
-pandas \n
-tweepy \n 
+Before using TweetsAnalyzer, ensure you have the following installed: \\
+Python 3.x \\ 
+pandas \\
+tweepy \\ 
 
 
 # Usage
