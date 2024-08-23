@@ -42,11 +42,13 @@ search_term = 'example_term'
 
 # Initialize the TweetsAnalyzer with the DataFrame and search term
 analyzer = TweetsAnalyzer(df, search_term)
+```
 
 3. Analyze Data
 You can now use the methods provided by TweetsAnalyzer to analyze your data:
-
-#### Count tweets containing the term on each day
+```bash
+python==3.11
+# Count tweets containing the term on each day
 tweet_counts_by_date = analyzer.count_tweets_with_term_by_date()\
 print("Number of tweets posted containing the term on each day:", tweet_counts_by_date)
 
